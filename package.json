@@ -1,0 +1,27 @@
+{
+  "name": "training",
+  "version": "1.0.0",
+  "description": "nothing relevant, just training",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "lint": "tslint \"src/**/*.ts\""
+  },
+  "author": "Fernando Ramos",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/angular": "^1.6.42",
+    "rimraf": "^2.6.2",
+    "ts-node": "^4.1.0",
+    "tslint": "^5.9.1",
+    "tslint-config-prettier": "^1.8.0",
+    "tslint-eslint-rules": "^5.0.0"
+  },
+  "dependencies": {
+    "angular": "^1.6.9",
+    "requirejs": "^2.3.5",
+    "systemjs": "^0.21.0",
+    "typescript": "^2.7.2"
+  }
+}
