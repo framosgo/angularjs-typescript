@@ -1,13 +1,9 @@
 import * as angular from 'angular';
 
-import { moduleName as appModuleName } from './app.module';
-
-const moduleName = 'app';
-
-angular.module(moduleName, [
-  appModuleName
-]);
+import { AppModule } from './app/app.module';
 
 angular.element(() => {
-  angular.bootstrap(document, [moduleName]);
+  angular.bootstrap(document, [
+    AppModule.name
+  ]);
 });
