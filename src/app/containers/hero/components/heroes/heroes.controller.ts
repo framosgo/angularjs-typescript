@@ -8,6 +8,7 @@ class Changes implements IOnChangesObject {
 }
 
 export class HeroesController {
+  static readonly controllerName: string = 'HeroesController';
   static readonly $inject: Array<string> = [];
 
   heroes: Hero[];
@@ -15,6 +16,6 @@ export class HeroesController {
   constructor() {}
 
   $onChanges(changes: Changes): void {
-    console.log("onChange heroes", changes.heroes);
+    //console.log("onChange heroes", changes.heroes);
   }
 }

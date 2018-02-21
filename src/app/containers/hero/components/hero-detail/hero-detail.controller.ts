@@ -1,20 +1,11 @@
-import { IOnChangesObject, IChangesObject } from "angular";
+import { IComponentController } from "angular";
 import { Hero } from "../../models/Hero";
 
-class Changes implements IOnChangesObject {
-  [key: string]: ng.IChangesObject<any>;
-
-  heroes: IChangesObject<Hero[]>;
-}
-
-export class HeroDetailController {
+export class HeroDetailController implements IComponentController{
+  static readonly controllerName: string = "HeroDetailController";
   static readonly $inject: Array<string> = [];
 
-  heroes: Hero[];
+  hero: Hero;
 
   constructor() {}
-
-  $onChanges(changes: Changes): void {
-    console.log("onChange heroes", changes.heroes);
-  }
 }

@@ -3,7 +3,8 @@ import { HeroController } from "./hero.controller";
 
 const component: IComponentOptions = {
   controller: HeroController,
-  templateUrl: '../src/hero/hero.component.html',
+  controllerAs: 'vm',
+  templateUrl: '../src/app/containers/hero/hero.component.html',
 }
 
 export const HeroComponent = {

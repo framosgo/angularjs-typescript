@@ -1,4 +1,5 @@
-<h3>My Heroes List</h3>
-<div ng-repeat="hero in $ctrl.heroes">
-  <hero-detail></hero-detail>
+<h3>My Heroes</h3>
+<div ng-repeat="hero in vm.heroes">
+  {{ hero.name }}
+  <hero-detail hero="hero"></hero-detail>
 </div>

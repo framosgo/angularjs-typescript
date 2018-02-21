@@ -3,6 +3,7 @@ import { Hero } from "./models/Hero";
 import { HeroService, IHeroService } from "./services/hero.service";
 
 export class HeroController implements IComponentController {
+  static readonly controllerName: string = 'HeroController';
   static readonly $inject: Array<string> = [HeroService.serviceName];
 
   heroes: Hero[];

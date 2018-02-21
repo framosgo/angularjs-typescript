@@ -3,7 +3,8 @@ import { HeroesController } from './heroes.controller';
 
 const component: IComponentOptions = {
   controller: HeroesController,
-  templateUrl: '../src/hero/components/heroes/heroes.component.html',
+  controllerAs: 'vm',
+  templateUrl: '../src/app/containers/hero/components/heroes/heroes.component.html',
   bindings: {
     heroes: '<'
   }
