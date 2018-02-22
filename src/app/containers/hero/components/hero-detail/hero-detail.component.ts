@@ -11,6 +11,6 @@ const component: IComponentOptions = {
 }
 
 export const HeroDetailComponent = {
-  selector: 'hero-detail',
+  selector: 'heroDetail',
   component
 }
